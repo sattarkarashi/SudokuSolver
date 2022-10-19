@@ -57,10 +57,14 @@ def next_cell(i, j):
 
 
 # make a sudo board
-def sudo_maker(table):
-    for i in range(50):
-        x = random.randint(0, 8)
-        y = random.randint(0, 8)
-        table[x][y] = 0
+def sudo_maker(table, n):
+    try:
+        for i in range(n):
+            x = random.randint(0, 8)
+            y = random.randint(0, 8)
+            table[x][y] = 0
 
-    return table
+        return table
+
+    except:
+        print("Use valid inputs")
