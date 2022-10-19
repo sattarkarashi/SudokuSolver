@@ -1,6 +1,6 @@
 import numpy as np
 from helper_functions import *
-import argsv
+from sys import argv
 
 
 def ranger(i):
